@@ -1,10 +1,6 @@
 import cv2
 import numpy as np
 
-# import sys
-# from os import startfile
-# startfile()
-
 
 # Load Yolo
 # Download weight file(yolov3_training_2000.weights) from this link :- https://drive.google.com/file/d/10uJEsUpQI3EmD98iwrwzbD4e19Ps-LHZ/view?usp=sharing
