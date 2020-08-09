@@ -18,7 +18,7 @@ colors = np.random.uniform(0, 255, size=(len(classes), 3))
 # img = cv2.imread("room_ser.jpg")
 # img = cv2.resize(img, None, fx=0.4, fy=0.4)
 
-# Enter file name for example ak47.mp4 or press "Enter" to start webcam
+# Enter file name for example "ak47.mp4" or press "Enter" to start webcam
 def value():
     val = input("Enter file name or press enter to start webcam : \n")
     if val == "":
