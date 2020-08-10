@@ -68,6 +68,7 @@ while True:
 
     indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
     print(indexes)
+    if indexes == 0: print("weapon detected in frame")
     font = cv2.FONT_HERSHEY_PLAIN
     for i in range(len(boxes)):
         if i in indexes:
