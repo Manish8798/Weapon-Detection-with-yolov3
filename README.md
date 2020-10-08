@@ -2,5 +2,4 @@
 This model detects weapons in a frame and highlights that particular area in frame.
 
 requirements:
-OpenCV
-Python version 3.7 (tested)
+OpenCV, Python version 3.7 (tested)
