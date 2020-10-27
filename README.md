@@ -1,5 +1,5 @@
 # Weapon Detection with yolov3
-This model detects weapons in a frame and highlights that particular area in frame.
+This model detects weapon in frames.
 
 requirements:
 OpenCV, numpy, Python version 3.7 (tested)
