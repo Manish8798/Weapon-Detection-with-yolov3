@@ -1,5 +1,5 @@
 # Weapon Detection with yolov3
-This model detects weapon in frames.
+**A machine learning model for weapon detection**
 
 requirements:
 - OpenCV
