@@ -2,4 +2,6 @@
 This model detects weapon in frames.
 
 requirements:
-OpenCV, numpy, Python version 3.7 (tested)
+- OpenCV
+- numpy
+- Python version 3.7 (tested)
