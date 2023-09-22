@@ -9,8 +9,9 @@ classes = ["Weapon"]
 # with open("coco.names", "r") as f:
 #     classes = [line.strip() for line in f.readlines()]
 
-layer_names = net.getLayerNames()
-output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+# layer_names = net.getLayerNames()
+# output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+output_layer_names = net.getUnconnectedOutLayersNames()
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 
@@ -32,6 +33,9 @@ cap = cv2.VideoCapture(value())
 # val = cv2.VideoCapture()
 while True:
     _, img = cap.read()
+    if not _:
+        print("Error: Failed to read a frame from the video source.")
+        break
     height, width, channels = img.shape
     # width = 512
     # height = 512
@@ -40,7 +44,7 @@ while True:
     blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
 
     net.setInput(blob)
-    outs = net.forward(output_layers)
+    outs = net.forward(output_layer_names)
 
     # Showing information on the screen
     class_ids = []
